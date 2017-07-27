@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "dev": "nodemon index"
   },
   "keywords": [],
   "author": "Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
   "license": "MIT",
   "dependencies": {
+    "express": "4.15.3",
+    "express-graphql": "0.6.6",
     "graphql": "0.10.5"
+  },
+  "devDependencies": {
+    "nodemon": "1.11.0"
   }
 }
