@@ -3,13 +3,14 @@ const graphqlHTTP = require('express-graphql')
 const {
   GraphQLSchema,
   GraphQLObjectType,
+  GraphQLList,
   GraphQLNonNull,
   GraphQLID,
   GraphQLString,
   GraphQLInt,
   GraphQLBoolean
 } = require('graphql')
-const { getVideoById } = require('./src/data')
+const { getVideoById, getVideos } = require('./src/data')
 
 const PORT = process.env.PORT || 3000
 const server = express()
@@ -41,6 +42,10 @@ const queryType = new GraphQLObjectType({
   name: 'QueryType',
   description: 'The root query type.',
   fields: {
+    videos: {
+      type: new GraphQLList(videoType),
+      resolve: getVideos
+    },
     video: {
       type: videoType,
       args: {
