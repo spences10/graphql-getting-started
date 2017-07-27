@@ -1,6 +1,14 @@
 const express = require('express')
 const graphqlHTTP = require('express-graphql')
-const { GraphQLSchema, GraphQLObjectType, GraphQLID, GraphQLString, GraphQLInt, GraphQLBoolean } = require('graphql')
+const {
+  GraphQLSchema,
+  GraphQLObjectType,
+  GraphQLNonNull,
+  GraphQLID,
+  GraphQLString,
+  GraphQLInt,
+  GraphQLBoolean
+} = require('graphql')
 const { getVideoById } = require('./src/data')
 
 const PORT = process.env.PORT || 3000
@@ -37,7 +45,7 @@ const queryType = new GraphQLObjectType({
       type: videoType,
       args: {
         id: {
-          type: GraphQLID,
+          type: new GraphQLNonNull(GraphQLID),
           description: 'The id of the video'
         }
       },
