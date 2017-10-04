@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "5.0.0-alpha.6",
     "express-graphql": "0.6.11",
-    "graphql": "0.11.6",
+    "graphql": "0.11.7",
     "graphql-relay": "0.5.3"
   },
   "devDependencies": {
