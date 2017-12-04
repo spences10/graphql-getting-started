@@ -17,6 +17,6 @@
     "graphql-relay": "0.5.3"
   },
   "devDependencies": {
-    "nodemon": "1.12.1"
+    "nodemon": "1.12.2"
   }
 }
