@@ -1,22 +1,20 @@
 {
   "name": "graphql-getting-started",
-  "version": "0.0.1",
-  "description": "",
+  "version": "1.0.0",
+  "description": "[![Greenkeeper badge](https://badges.greenkeeper.io/spences10/graphql-getting-started.svg)](https://greenkeeper.io/)",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "dev": "nodemon index"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spences10/graphql-getting-started.git"
   },
   "keywords": [],
-  "author": "Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
+  "author": "Scott Spence <spences10apps@gmail.com> (https://scottspence.me/)",
   "license": "MIT",
-  "dependencies": {
-    "express": "5.0.0-alpha.6",
-    "express-graphql": "0.6.12",
-    "graphql": "0.13.2",
-    "graphql-relay": "0.5.5"
+  "bugs": {
+    "url": "https://github.com/spences10/graphql-getting-started/issues"
   },
-  "devDependencies": {
-    "nodemon": "1.17.3"
-  }
+  "homepage": "https://github.com/spences10/graphql-getting-started#readme"
 }
