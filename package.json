@@ -11,7 +11,7 @@
   "author": "Scott Spence <spences10apps@gmail.com> (https://blog.scottspence.me/)",
   "license": "MIT",
   "dependencies": {
-    "express": "5.0.0-alpha.6",
+    "express": "5.0.0-alpha.7",
     "express-graphql": "0.6.12",
     "graphql": "14.0.2",
     "graphql-relay": "0.5.5"
